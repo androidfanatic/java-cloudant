@@ -1,12 +1,12 @@
 ---
 declared-services:
-  sample-java-cloudant-cloudantNoSQLDB:
+  JavaCloudantWebStarterApp-cloudantNoSQLDB:
     label: cloudantNoSQLDB
     plan: Lite
 applications:
-- name: sample-java-cloudant
+- name: JavaCloudantWebStarterApp
   random-route: true
   memory: 512M
   path: target/JavaCloudantApp.war
   services:
-  - sample-java-cloudant-cloudantNoSQLDB
+  - JavaCloudantWebStarterApp-cloudantNoSQLDB
